@@ -1,0 +1,14 @@
+{
+  "name": "@repo/garden",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch src/server.ts",
+    "build": "bun build ./src/server.ts --outdir ./dist --target bun",
+    "check": "bunx tsc --noEmit"
+  },
+  "dependencies": {
+    "@repo/config": "workspace:*"
+  }
+}

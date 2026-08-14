@@ -1,0 +1,22 @@
+{
+  "name": "bun-monorepo",
+  "private": true,
+  "packageManager": "bun@1.2.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "bun run --filter @repo/garden dev",
+    "dev:all": "bun run --filter '*' dev",
+    "lint": "biome check .",
+    "format": "biome format --write .",
+    "build": "bun run --filter '*' build",
+    "check": "bun run --filter '*' check"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.8",
+    "@types/bun": "1.3.14",
+    "typescript": "5.9.2"
+  }
+}
