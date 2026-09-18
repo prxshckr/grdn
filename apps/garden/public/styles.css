@@ -1,25 +1,24 @@
 html,
-body,
-#app {
-  width: 100%;
-  height: 100%;
-  margin: 0;
+body {
+	width: 100%;
+	height: 100%;
 }
 
 body {
-  overflow: hidden;
-  background: #111111;
-  overscroll-behavior: none;
-  -webkit-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
+	margin: 0;
+	overflow: hidden;
+}
+
+#app {
+	display: grid;
+	height: 100%;
+	place-items: center;
+	background: #111111;
 }
 
 #game-canvas {
-  display: block;
-  width: 100vw;
-  height: 100dvh;
-  image-rendering: pixelated;
-  image-rendering: crisp-edges;
-  touch-action: none;
+	image-rendering: pixelated;
+	object-fit: contain;
+	width: 100%;
+	height: auto;
 }

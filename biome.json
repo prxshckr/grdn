@@ -1,8 +1,16 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.5.8/schema.json",
-  "javascript": {
-    "formatter": {
-      "semicolons": "asNeeded"
-    }
-  }
+	"$schema": "https://biomejs.dev/schemas/2.5.8/schema.json",
+	"javascript": {
+		"formatter": {
+			"semicolons": "asNeeded",
+			"quoteStyle": "single"
+		}
+	},
+	"linter": {
+		"rules": {
+			"style": {
+				"noNonNullAssertion": "info"
+			}
+		}
+	}
 }

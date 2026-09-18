@@ -11,26 +11,42 @@
       },
     },
     "apps/garden": {
-      "name": "@repo/garden",
+      "name": "@garden/game",
       "version": "0.0.0",
       "dependencies": {
-        "@repo/config": "workspace:*",
+        "@garden/canvas-ctx": "workspace:*",
+        "@garden/dom-manipulation": "workspace:*",
       },
     },
-    "apps/web": {
-      "name": "@repo/web",
-      "version": "0.0.0",
-      "dependencies": {
-        "@repo/config": "workspace:*",
+    "packages/assembly-ctx": {
+      "name": "@garden/assembly-ctx",
+      "version": "0.1.0",
+      "devDependencies": {
+        "@types/bun": "1.3.14",
+      },
+      "peerDependencies": {
+        "typescript": "^5",
       },
     },
-    "packages/config": {
-      "name": "@repo/config",
-      "version": "0.0.0",
+    "packages/canvas-ctx": {
+      "name": "@garden/canvas-ctx",
+      "version": "0.1.0",
+      "devDependencies": {
+        "@types/bun": "1.3.14",
+      },
+      "peerDependencies": {
+        "typescript": "^5",
+      },
     },
-    "packages/fp": {
-      "name": "@repo/fp",
-      "version": "0.0.0",
+    "packages/dom-manipulation": {
+      "name": "@garden/dom-manipulation",
+      "version": "0.1.0",
+      "devDependencies": {
+        "@types/bun": "1.3.14",
+      },
+      "peerDependencies": {
+        "typescript": "^5",
+      },
     },
   },
   "packages": {
@@ -52,13 +68,13 @@
 
     "@biomejs/cli-win32-x64": ["@biomejs/cli-win32-x64@2.5.8", "", { "os": "win32", "cpu": "x64" }, "sha512-I2czzXTY61f3nFJxXoMDq80t7MivxDEnCjE+8sDKoFfcKMaoQdkqhIFQ3KyY0XLzeSpUBYeNAXgD+iOV/BU0VA=="],
 
-    "@repo/config": ["@repo/config@workspace:packages/config"],
+    "@garden/assembly-ctx": ["@garden/assembly-ctx@workspace:packages/assembly-ctx"],
 
-    "@repo/fp": ["@repo/fp@workspace:packages/fp"],
+    "@garden/canvas-ctx": ["@garden/canvas-ctx@workspace:packages/canvas-ctx"],
 
-    "@repo/garden": ["@repo/garden@workspace:apps/garden"],
+    "@garden/dom-manipulation": ["@garden/dom-manipulation@workspace:packages/dom-manipulation"],
 
-    "@repo/web": ["@repo/web@workspace:apps/web"],
+    "@garden/game": ["@garden/game@workspace:apps/garden"],
 
     "@types/bun": ["@types/bun@1.3.14", "", { "dependencies": { "bun-types": "1.3.14" } }, "sha512-h1hFqFVcvAvD9j9K7ZW7vd82aSA+rTdznZa+5bwvCwqSB1jmmfLcbIWhOLx1/+boy/xmjgCs/OMUL8hRJSmnPw=="],
 

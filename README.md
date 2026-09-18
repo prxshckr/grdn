@@ -1,5 +1,20 @@
 # Bun monorepo
 
+```text
+   _.-""-._        _.-""-._
+ .'  .-.   '.    .'   .-.  '.
+/   (   )    \  /    (   )   \
+|  .-`-'.-.  |  |  .-.'-`-.  |
+| (  🌱  | ) |  | ( |  🌼  ) |
+\  `-.__.'  /    \  `.__.-'  /
+ '._      _.'      '._    _.'
+    `""""`            `""""`
+```
+
+Tiny monorepo, big garden energy 🌿✨🪴
+
+- `@repo/fp` docs: `packages/fp/README.md` 🌱
+
 This Bun workspace separates deployable application code in `apps/` from shared monorepo packages in `packages/`.
 
 ## Commands

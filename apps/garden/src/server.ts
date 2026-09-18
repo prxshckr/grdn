@@ -1,8 +1,12 @@
-import rootHtml from "../public/index.html"
+import rootHtml from '../public/index.html'
 
-Bun.serve({
+const server = Bun.serve({
+	hostname: '0.0.0.0',
+	port: Number(Bun.env.PORT ?? 8080),
 	routes: {
-		"/": rootHtml,
-		"/*": new Response("Not found.", { status: 404 }),
+		'/': rootHtml,
+		'/*': new Response('Not found.', { status: 404 }),
 	},
 })
+
+console.log(`Server running on: ${server.port}`)
