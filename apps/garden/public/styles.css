@@ -11,6 +11,8 @@ body {
 
 #app {
 	display: grid;
+	box-sizing: border-box;
+	grid-template-rows: minmax(0, 1fr) auto;
 	height: 100%;
 	place-items: center;
 	background: #111111;
@@ -19,6 +21,7 @@ body {
 #game-canvas {
 	image-rendering: pixelated;
 	object-fit: contain;
+	touch-action: none;
 	width: 100%;
 	height: auto;
 }

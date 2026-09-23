@@ -10,4 +10,4 @@ ENV NODE_ENV=production
 
 EXPOSE 8080
 
-CMD ["bun", "apps/garden/src/server.ts"]
+CMD ["bun", "apps/garden/src/server/main.ts"]

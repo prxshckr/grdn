@@ -1,0 +1,16 @@
+{
+	"image": "/assets/dino.png",
+	"width": 32,
+	"height": 32,
+	"animations": {
+		"idle": {
+			"frames": [
+				{ "x": 0, "y": 0, "duration": 125 },
+				{ "x": 0, "y": 32, "duration": 125 },
+				{ "x": 0, "y": 64, "duration": 125 },
+				{ "x": 0, "y": 96, "duration": 125 }
+			],
+			"loop": true
+		}
+	}
+}
